@@ -18,3 +18,36 @@
     background: linear-gradient(267deg, #B923E1 0.36%, #DA7C25 100%);
     transform: scale(1.05);
 }
+
+a{
+    color: white;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.nav-menu li.active {
+  background: linear-gradient(267deg, #B923E1 0.36%, #DA7C25 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-menu li.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(267deg, #B923E1 0.36%, #DA7C25 100%);
+  border-radius: 2px;
+}
