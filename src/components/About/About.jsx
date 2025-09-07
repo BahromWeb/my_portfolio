@@ -19,10 +19,10 @@ const About = () => {
                     <p>My goal is to help people achieve their goals</p>
                 </div>
                 <div className="about-skills">
-                    <div className="about-skill"><p>HTML & CSS <hr style={{width:"50%"}} /></p></div>
-                    <div className="about-skill"><p>React JS <hr style={{width:"70%"}} /></p></div>
-                    <div className="about-skill"><p>JavaScript <hr style={{width:"60%"}} /></p></div>
-                    <div className="about-skill"><p>Next JS <hr style={{width:"50%"}} /></p></div>
+                    <div className="about-skill"><p>HTML & CSS </p><hr style={{width:"50%"}} /></div>
+                    <div className="about-skill"><p>React JS </p><hr style={{width:"70%"}} /></div>
+                    <div className="about-skill"><p>JavaScript </p><hr style={{width:"60%"}} /></div>
+                    <div className="about-skill"><p>Next JS </p><hr style={{width:"50%"}} /></div>
                 </div>
             </div>
          </div>
