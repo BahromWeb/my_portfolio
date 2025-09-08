@@ -51,3 +51,77 @@ a{
   background: linear-gradient(267deg, #B923E1 0.36%, #DA7C25 100%);
   border-radius: 2px;
 }
+
+.nav-mob-close{
+    display: none;
+}
+
+.nav-mob-open{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .navbar{
+        margin: 20px 50px;
+    }
+
+    .nav-menu li.active {
+      background: linear-gradient(267deg, #B923E1 0.36%, #DA7C25 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+        }
+      .nav-menu li.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: fit-content;
+      height: 3px;
+      background: linear-gradient(267deg, #B923E1 0.36%, #DA7C25 100%);
+      border-radius: 2px;
+    }
+
+    a{
+    color: white;
+    }
+
+    .nav-connect{
+      display: none;
+    }
+
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+
+    .nav-mob-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0;
+        gap: 30px;
+        background-color: #1F0016;
+        width: 350px;
+        height: 100%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+
+    .nav-menu li{
+       font-size: 30px;
+       padding-left: 100px;
+       flex-direction: row;
+       gap: 20px;
+    }
+  }
